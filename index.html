@@ -5,9 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Undangan Bukber</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+        body { font-family: 'Montserrat', sans-serif; }
+    </style>
 </head>
 <body class="bg-gradient-to-b from-gray-900 to-gray-700 text-white font-sans flex items-center justify-center min-h-screen relative overflow-hidden">
     
+    <!-- Audio Otomatis -->
+    <audio id="bg-audio" autoplay loop>
+        <source src="ramadhan.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung elemen audio.
+    </audio>
+    <script>
+        document.addEventListener('click', () => {
+            const audio = document.getElementById('bg-audio');
+            audio.play().catch(error => console.log("Autoplay diblokir oleh browser, pengguna harus berinteraksi dulu."));
+        });
+    </script>
+
     <!-- Hiasan Lampion -->
     <div class="absolute top-0 left-0 w-full flex justify-between p-6">
         <img src="https://png.pngtree.com/png-vector/20230324/ourmid/pngtree-ramadan-ornament-hanging-lantern-vector-png-image_6667647.png" class="w-16 h-16 animate-bounce" alt="Lampion">
@@ -30,17 +46,5 @@
         </a>
     </div>
 
-    <!-- Background Sound -->
-    <audio id="background-audio" loop>
-        <source src="https://www.islamicfinder.org/specials/audio/azan/azan1.mp3" type="audio/mpeg">
-        Browser Anda tidak mendukung elemen audio.
-    </audio>
-    <button onclick="playAudio()" class="absolute bottom-4 right-4 bg-yellow-400 text-gray-900 px-4 py-2 rounded-lg font-semibold shadow-md hover:bg-yellow-500 transition">▶ Play Audio</button>
-    
-    <script>
-        function playAudio() {
-            document.getElementById("background-audio").play();
-        }
-    </script>
 </body>
 </html>
