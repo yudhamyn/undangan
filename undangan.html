@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Bukber Ramadan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes floating {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+        .glow {
+            text-shadow: 0 0 15px rgba(255, 223, 128, 0.9), 0 0 25px rgba(255, 223, 128, 0.7);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-gray-900 to-gray-800 text-white font-sans flex items-center justify-center min-h-screen relative overflow-hidden px-4">
+    
+    <!-- Hiasan Lampion -->
+    <div class="absolute top-0 left-0 w-full flex justify-center gap-4 p-4">
+        <img src="https://png.pngtree.com/png-vector/20230324/ourmid/pngtree-ramadan-ornament-hanging-lantern-vector-png-image_6667647.png" class="w-16 h-16 animate-floating" alt="Lampion">
+        <img src="https://png.pngtree.com/png-vector/20230324/ourmid/pngtree-ramadan-ornament-hanging-lantern-vector-png-image_6667647.png" class="w-20 h-20 animate-floating delay-500" alt="Lampion">
+        <img src="https://png.pngtree.com/png-vector/20230324/ourmid/pngtree-ramadan-ornament-hanging-lantern-vector-png-image_6667647.png" class="w-16 h-16 animate-floating" alt="Lampion">
+    </div>
+    
+    <div class="bg-gray-800 p-8 rounded-3xl shadow-2xl max-w-md text-center w-full relative z-10 border-4 border-yellow-400">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-yellow-400 glow mb-4">✨ Undangan Bukber Ramadan ✨</h2>
+        <p class="text-gray-300 text-lg leading-relaxed">Keluarga Ibu Liana mengundang rekan-rekan dalam acara buka puasa yang akan dilaksanakan pada:</p>
+        <div class="mt-6 text-xl font-semibold flex flex-col gap-2">
+            <p class="text-yellow-400">📅 Kamis, 27 Maret 2025</p>
+            <p class="text-white">⏰ Pukul <span class="font-bold">17.00 – Selesai</span></p>
+            <p class="text-gray-300">📍 Pawon Joglo Kembar, Kudus</p>
+        </div>
+        <div class="mt-6 flex justify-center">
+            <a href="https://maps.app.goo.gl/EK5uB6Tu1ea8djBU9?g_st=com.google.maps.preview.copy" target="_blank" class="bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg font-semibold shadow-lg hover:bg-yellow-500 transition transform hover:scale-105 flex items-center gap-2">
+                📍 Lihat Lokasi
+            </a>
+        </div>
+    </div>
+    
+    <!-- Hiasan Bintang -->
+    <div class="absolute inset-0 flex flex-wrap gap-1 opacity-50">
+        <div class="w-1 h-1 bg-white rounded-full animate-pulse"></div>
+        <div class="w-2 h-2 bg-white rounded-full animate-pulse delay-300"></div>
+        <div class="w-3 h-3 bg-white rounded-full animate-pulse delay-500"></div>
+    </div>
+    
+</body>
+</html>
